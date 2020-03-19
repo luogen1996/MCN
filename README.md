@@ -41,9 +41,9 @@ This repository is keras implementation of MCN.  The principle of MCN is a multi
 
 ## Data preparation
 
--  Follow the instructions of  DATA_PRE_README.md to generate training data and testing data of RefCOCO, RefCOCO+ and RefCOCOg.
+-  Follow the instructions of  [DATA_PRE_README.md}(https://github.com/luogen1996/MCN/blob/master/data/README.md) to generate training data and testing data of RefCOCO, RefCOCO+ and RefCOCOg.
 
--  Download the pretrained weights of backbone (vgg and darknet). We provide pretrained weights of keras  version for this repo and another  darknet version for  facilitating  the researches based on pytorch or other frameworks.  All pretrained backbones are trained for 450k iterations on COCO 2014 *train+val*  set while removing the images appeared in the *val+test* sets of RefCOCO, RefCOCO+ and RefCOCOg (nearly 6500 images).  Please follow the instructions of  DATA_PRE_README.md to download them.
+-  Download the pretrained weights of backbone (vgg and darknet). We provide pretrained weights of keras  version for this repo and another  darknet version for  facilitating  the researches based on pytorch or other frameworks.  All pretrained backbones are trained for 450k iterations on COCO 2014 *train+val*  set while removing the images appeared in the *val+test* sets of RefCOCO, RefCOCO+ and RefCOCOg (nearly 6500 images).  Please follow the instructions of  [DATA_PRE_README.md](https://github.com/luogen1996/MCN/blob/master/data/README.md) to download them.
 
 ## Training 
 
