@@ -58,7 +58,7 @@ python test.py
 ```
 ​	After finishing the evaluation,  a result file will be generated  in ``./result`` folder.
 
-4. Training log.  Logs are stored in ``./log`` directory, which records the detailed training curve and accuracy per epoch. If you want to log the visualizations, please  setting  ``log_images`` to 1 in ``config.json``.   By using tensorboard you can see the training details like below：
+4. Training log.  Logs are stored in ``./log`` directory, which records the detailed training curve and accuracy per epoch. If you want to log the visualizations, please  setting  ``log_images`` to ``1`` in ``config.json``.   By using tensorboard you can see the training details like below：
   <p align="center">
   <img src="https://github.com/luogen1996/MCN/blob/master/fig2.png" width="90%"/>
   </p>
