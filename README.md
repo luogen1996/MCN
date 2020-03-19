@@ -37,7 +37,7 @@ This repository is keras implementation of MCN.  The principle of MCN is a multi
 
 - spacy (you should download the glove embeddings by running `spacy download en_vectors_web_lg` )
 
-- Others (progressbar2, opencv, etc. see requirement.txt)
+- Others (progressbar2, opencv, etc. see [requirement.txt](https://github.com/luogen1996/MCN/blob/master/requirement.txt))
 
 ## Data preparation
 
