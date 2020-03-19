@@ -47,7 +47,7 @@ This repository is keras implementation of MCN.  The principle of MCN is a multi
 
 ## Training 
 
-1. Preparing your settings. To train a model, you should  modify ``./config/config.json``  to adjust the settings  you want. The default settings are used for RefCOCO, which are easy to achieve 80.0 and 62.0  accuracy for REC and RES respectively on the *val* set. We also provide  example configs for reproducing our results on RefCOCO+ and RefCOCOg.
+1. Preparing your settings. To train a model, you should  modify ``./config/config.json``  to adjust the settings  you want. The default settings are used for RefCOCO, which are easy to achieve 80.0 and 62.0  accuracy for REC and RES respectively on the *val* set. We also provide  example configs for reproducing our results on [RefCOCO+](https://github.com/luogen1996/MCN/blob/master/config/config.Example_Refcoco%2B.json) and [RefCOCOg](https://github.com/luogen1996/MCN/blob/master/config/config.Example_Refcocog.json).
 2. Training the model. run ` train.py`  under the main folder to start training:
 ```
 python train.py
