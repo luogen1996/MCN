@@ -13,7 +13,7 @@ from keras.callbacks import TensorBoard, ModelCheckpoint
 from callbacks.learning_scheduler import LearningRateScheduler
 from callbacks.common import RedirectModel
 from utils.utils import lr_step_decay
-
+import json
 
 np.random.seed(config['seed'])
 tf.set_random_seed(config['seed'])
@@ -21,6 +21,7 @@ tf.set_random_seed(config['seed'])
 MODELS_PATH = os.path.join(config['log_path'], 'models')
 if not os.path.exists(MODELS_PATH):
     os.makedirs(MODELS_PATH)
+    json.dump(config,open(os.path.join(MODELS_PATH,'config.json'),'w'))
 
 class Learner(object):
     def __init__(self):
