@@ -69,8 +69,9 @@ Following the steps of Data preparation and Training, you can reproduce or get a
 
 1) RefCOCO:  Darknet (312M), vgg16(214M).
 <table>
-<tr><th> Detection/Segmentation \(Darknet\) </th><th> Detection/Segmentation \(vgg16\)</th></tr>
+<tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
 <tr><td>
+  
 | val | test A | test B |
 |--|--|--|
 | 81.17\% / 63.01\% |82.36\% / 63.92\% | 76.07\% / 60.91\% |
@@ -85,6 +86,7 @@ Following the steps of Data preparation and Training, you can reproduce or get a
 <table>
 <tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
 <tr><td>
+  
 | val | test A | test B |
 |--|--|--|
 | 68.05\% / 51.43\% |71.15\% / 53.96\% | 58.95\% / 46.40\% |
@@ -99,6 +101,7 @@ Following the steps of Data preparation and Training, you can reproduce or get a
 <table>
 <tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
 <tr><td>
+  
 | val | test |
 |--|--|--|
 |66.12\% / 49.15\% | 65.14\% / 49.02\% |
