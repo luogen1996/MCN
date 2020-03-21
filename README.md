@@ -63,6 +63,52 @@ python test.py
   <img src="https://github.com/luogen1996/MCN/blob/master/fig2.png" width="90%"/>
   </p>
 
+## Pre-trained Models
+
+Following the steps of Data preparation and Training, you can reproduce or get a even better result in our paper. We provide the pre-trained models for RefCOCO, RefCOCO+, RefCOCOg.
+
+1) RefCOCO:  Darknet (312M), vgg16(214M).
+<table>
+<tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
+<tr><td>
+| val | test A | test B |
+|--|--|--|
+| 81.17\%/63.01\% |82.36\%/63.92\% | 76.07\%/60.91\% |
+</td><td>
+
+| val | test A | test B |
+|--|--|--|
+| - | -| - |
+</td></tr> </table>
+
+2) RefCOCO+:  Darknet (312M), vgg16(214M).
+<table>
+<tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
+<tr><td>
+| val | test A | test B |
+|--|--|--|
+| 68.05\%/51.43\% |71.15\%/53.96\% | 58.95\%46.40\% |
+</td><td>
+
+| val | test A | test B |
+|--|--|--|
+| - | -| - |
+</td></tr> </table>
+
+3) RefCOCOg:  Darknet (312M), vgg16(214M).
+<table>
+<tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
+<tr><td>
+| val | test |
+|--|--|--|
+|66.12\%/49.15\% | 65.14\%49.02\% |
+</td><td>
+
+| val | test |
+|--|--|--|
+| -|- |
+</td></tr> </table>
+
 ## Acknowledgement
 
  Thanks for a lot of codes from [keras-yolo3](https://github.com/qqwweee/keras-yolo3) , [keras-retinanet](https://github.com/fizyr/keras-retinanet)  and the framework of  [darknet](https://github.com/AlexeyAB/darknet) using for backbone pretraining.
