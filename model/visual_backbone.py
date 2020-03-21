@@ -59,12 +59,12 @@ def vgg16(inputs):
     )(stage1)
     stage3=MaxPooling2D()(stage2)
     stage3 = compose(
-        VGGnetConv2D_BN_Relu(512, (1,1)),
-        VGGnetConv2D_BN_Relu(1024, (3,3)),
-        VGGnetConv2D_BN_Relu(512, (1,1)),
-        VGGnetConv2D_BN_Relu(1024, (3,3)),
-        VGGnetConv2D_BN_Relu(512, (1,1)),
-        VGGnetConv2D_BN_Relu(1024, (3, 3)))(stage3)
+        DarknetConv2D_BN_Leaky(512, (1,1)),
+        DarknetConv2D_BN_Leaky(1024, (3,3)),
+        DarknetConv2D_BN_Leaky(512, (1,1)),
+        DarknetConv2D_BN_Leaky(1024, (3,3)),
+        DarknetConv2D_BN_Leaky(512, (1,1)),
+        DarknetConv2D_BN_Leaky(1024, (3, 3)))(stage3)
     return [stage3,stage2,stage1]
 def resblock_body(x, num_filters, num_blocks):
     '''A series of resblocks starting with a downsampling Convolution2D'''
