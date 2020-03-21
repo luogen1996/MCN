@@ -65,7 +65,7 @@ python test.py
 
 ## Pre-trained Models
 
-Following the steps of Data preparation and Training, you can reproduce or get a even better result in our paper. We provide the pre-trained models for RefCOCO, RefCOCO+, RefCOCOg. Notably, we select a different checkpoint of pre-trained darknet backbone that performs more balance on person/object, therefore making the results a bit different from our paper. (The results of vgg backbone will be update soon.)
+Following the steps of Data preparation and Training, you can reproduce or get a even better result in our paper. We provide the pre-trained models for RefCOCO, RefCOCO+, RefCOCOg. Notably, we adjust some training hyperparameters like dropout rate and select a different checkpoint of pre-trained darknet backbone that performs more balance on person/object, therefore making the results a bit different from our paper. (The results of vgg backbone will be update soon.)
 
 1) RefCOCO:  [Darknet (312M)](https://1drv.ms/u/s!AmrFUyZ_lDVGgk2Z7jXpEDZ26bd0?e=Uocfmv), vgg16(214M).
 <table>
