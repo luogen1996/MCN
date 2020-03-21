@@ -2,7 +2,7 @@
 # %matplotlib inline
 import numpy as np
 import os
-from data.refer import REFER
+from refer import REFER
 import os.path as osp
 import cv2
 import argparse
@@ -33,7 +33,7 @@ elif args.dataset == 'refcoco':
 elif args.dataset == 'refcoco+':
     splits = ['train', 'val',  'testA', 'testB']
 elif args.dataset == 'refcocog':
-    splits = ['train', 'val']  # we don't have test split for refcocog right now.
+    splits = ['train', 'val','test'] 
 
 
 # split data as a type in splits list
