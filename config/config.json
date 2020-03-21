@@ -4,7 +4,7 @@
   "seg_gt_path": "./data/masks/refcoco",
   "image_path": "./data/images/train2014",
   "anchors_file": "./data/yolo_anchors.txt",
-  "pretrained_weights":"./data/weights/yolov3_finetune_refcoco(train).h5",
+  "pretrained_weights":"./data/weights/yolov3_450000.h5",
   "log_path": "./log/refcoco",
   "use_bert": 0,
   "backbone": "darknet",
