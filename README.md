@@ -67,7 +67,7 @@ python test.py
 
 Following the steps of Data preparation and Training, you can reproduce or get a even better result in our paper. We provide the pre-trained models for RefCOCO, RefCOCO+, RefCOCOg. Notably, we select a different checkpoint of pre-trained darknet backbone that performs more balance on person/object, therefore making the results a bit different from our paper. (The results of vgg backbone will be update soon.)
 
-1) RefCOCO:  Darknet (312M), vgg16(214M).
+1) RefCOCO:  [Darknet (312M)](https://1drv.ms/u/s!AmrFUyZ_lDVGgk2Z7jXpEDZ26bd0?e=Uocfmv), vgg16(214M).
 <table>
 <tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
 <tr><td>
@@ -82,7 +82,7 @@ Following the steps of Data preparation and Training, you can reproduce or get a
 | \- | \-| \- |
 </td></tr> </table>
 
-2) RefCOCO+:  Darknet (312M), vgg16(214M).
+2) RefCOCO+:  [Darknet (312M)](https://1drv.ms/u/s!AmrFUyZ_lDVGgkvNPV1AGAzhnN8j?e=cFFlJ5), vgg16(214M).
 <table>
 <tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
 <tr><td>
@@ -97,7 +97,7 @@ Following the steps of Data preparation and Training, you can reproduce or get a
 | \- | \-| \- |
 </td></tr> </table>
 
-3) RefCOCOg:  Darknet (312M), vgg16(214M).
+3) RefCOCOg:  [Darknet (312M)](https://1drv.ms/u/s!AmrFUyZ_lDVGgkxEwXRRv8JtBPQ2?e=XKL2RK), vgg16(214M).
 <table>
 <tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
 <tr><td>
