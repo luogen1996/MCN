@@ -73,7 +73,7 @@ Following the steps of Data preparation and Training, you can reproduce or get a
 <tr><td>
 | val | test A | test B |
 |--|--|--|
-| 81.17\%/63.01\% |82.36\%/63.92\% | 76.07\%/60.91\% |
+| 81.17\% / 63.01\% |82.36\% / 63.92\% | 76.07\% / 60.91\% |
 </td><td>
 
 | val | test A | test B |
@@ -87,7 +87,7 @@ Following the steps of Data preparation and Training, you can reproduce or get a
 <tr><td>
 | val | test A | test B |
 |--|--|--|
-| 68.05\%/51.43\% |71.15\%/53.96\% | 58.95\%46.40\% |
+| 68.05\% / 51.43\% |71.15\% / 53.96\% | 58.95\% / 46.40\% |
 </td><td>
 
 | val | test A | test B |
@@ -101,7 +101,7 @@ Following the steps of Data preparation and Training, you can reproduce or get a
 <tr><td>
 | val | test |
 |--|--|--|
-|66.12\%/49.15\% | 65.14\%49.02\% |
+|66.12\% / 49.15\% | 65.14\% / 49.02\% |
 </td><td>
   
 | val | test |
