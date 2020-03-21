@@ -103,12 +103,12 @@ Following the steps of Data preparation and Training, you can reproduce or get a
 <tr><td>
   
 | val | test |
-|--|--|--|
+|--|--|
 |66.12\% / 49.15\% | 65.14\% / 49.02\% |
 </td><td>
   
 | val | test |
-|--|--|--|
+|--|--|
 | \-| \- |
 </td></tr> </table>
 
