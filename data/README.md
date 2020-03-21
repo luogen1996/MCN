@@ -78,4 +78,4 @@ The weights of darknet pretrained on the whole *train* set of MS-COCO are also r
 | --------------------------------- | :----------------------------------------------------------: | :---------------------------------------------------------: |
 | DarkNet-yolov3 (COCO pre-trained) | [OneDrive](https://1drv.ms/u/s!AmrFUyZ_lDVGgkfaOxziFJr01WNy?e=kwl3h1) | [OneDrive](https://pjreddie.com/media/files/yolov3.weights) |
 
-Tips: In our  practice, the best pretrained checkpoint  do not  perform best on REC and RES. if you require other checkpoints, please contact [us](luogen@stu.xmu.edu.cn).
+Tips: In our  practice, different checkpoints  partly  varies the performence of model. if you require other checkpoints, please contact [us](luogen@stu.xmu.edu.cn).
