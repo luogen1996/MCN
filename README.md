@@ -65,7 +65,7 @@ python test.py
 
 ## Pre-trained Models
 
-Following the steps of Data preparation and Training, you can reproduce or get a even better result in our paper. We provide the pre-trained models for RefCOCO, RefCOCO+, RefCOCOg.
+Following the steps of Data preparation and Training, you can reproduce or get a even better result in our paper. We provide the pre-trained models for RefCOCO, RefCOCO+, RefCOCOg. Notably, we select a different checkpoint of pre-trained darknet backbone that performs more balance on person/object, therefore making the results a bit difference from our paper.
 
 1) RefCOCO:  Darknet (312M), vgg16(214M).
 <table>
