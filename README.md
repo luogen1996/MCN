@@ -69,11 +69,11 @@ Following the steps of Data preparation and Training, you can reproduce or get a
 
 1) RefCOCO:  Darknet (312M), vgg16(214M).
 <table>
-<tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
+<tr><th> Detection/Segmentation \(Darknet\) </th><th> Detection/Segmentation \(vgg16\)</th></tr>
 <tr><td>
 | val | test A | test B |
 |--|--|--|
-| 81.17\%  |82.36\% | 76.07\%  |
+| 81.17\% / 63.01\% |82.36\% / 63.92\% | 76.07\% / 60.91\% |
 </td><td>
 
 | val | test A | test B |
