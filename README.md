@@ -78,7 +78,7 @@ Following the steps of Data preparation and Training, you can reproduce or get a
 
 | val | test A | test B |
 |--|--|--|
-| - | -| - |
+| \- | \-| \- |
 </td></tr> </table>
 
 2) RefCOCO+:  Darknet (312M), vgg16(214M).
@@ -92,7 +92,7 @@ Following the steps of Data preparation and Training, you can reproduce or get a
 
 | val | test A | test B |
 |--|--|--|
-| - | -| - |
+| \- | \-| \- |
 </td></tr> </table>
 
 3) RefCOCOg:  Darknet (312M), vgg16(214M).
@@ -103,10 +103,10 @@ Following the steps of Data preparation and Training, you can reproduce or get a
 |--|--|--|
 |66.12\%/49.15\% | 65.14\%49.02\% |
 </td><td>
-
+  
 | val | test |
 |--|--|--|
-| -|- |
+| \-| \- |
 </td></tr> </table>
 
 ## Acknowledgement
