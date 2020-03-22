@@ -1,19 +1,3 @@
-"""
-Copyright 2017-2018 Fizyr (https://fizyr.com)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-"""
-
 import keras
 from model.mcn_model import yolo_eval_v2
 import numpy as np
@@ -38,16 +22,6 @@ class Evaluate(keras.callbacks.Callback):
         verbose=1
     ):
         """ Evaluate a given dataset using a given model at the end of every epoch during training.
-
-        # Arguments
-            generator        : The generator that represents the dataset to evaluate.
-            iou_threshold    : The threshold used to consider when a detection is positive or negative.
-            score_threshold  : The score confidence threshold to use for detections.
-            max_detections   : The maximum number of detections to use per image.
-            save_path        : The path to save images with visualized detections to.
-            tensorboard      : Instance of keras.callbacks.TensorBoard used to log the mAP value.
-            weighted_average : Compute the mAP using the weighted average of precisions among classes.
-            verbose          : Set the verbosity level, by default this is set to 1.
         """
         self.val_data       = data
         self.tensorboard     = tensorboard
@@ -135,7 +109,7 @@ class Evaluate(keras.callbacks.Callback):
         test_batch_size =self.batch_size
         for start in progressbar.progressbar(range(0, len(self.val_data), test_batch_size), prefix='evaluation: '):
             end = start +test_batch_size
-            images_path = self.val_data[start:end]
+            batch_data = self.val_data[start:end]
             images = []
             images_org = []
             files_id = []
@@ -144,8 +118,8 @@ class Evaluate(keras.callbacks.Callback):
             gt_boxes = []
             gt_segs = []
 
-            for image_path in images_path:
-                image_data, box, word_vec, image, sentence, seg_map = get_random_data(image_path, self.input_shape,
+            for data in batch_data:
+                image_data, box, word_vec, image, sentence, seg_map = get_random_data(data, self.input_shape,
                                                                                       self.word_embed, self.config,
                                                                                       train_mode=False)  # box is [1,5]
                 sentences.extend(sentence)
@@ -204,7 +178,6 @@ class Evaluate(keras.callbacks.Callback):
                 # detection eval
                 pred_box = self.box_value_fix(out_boxes[0],self.input_shape)
                 score = out_scores[0]
-                # calculate detection iou
                 detect_prec = self.cal_detect_iou(pred_box, gt_boxes[i], self.det_acc_thresh)
                 detect_prec_all += detect_prec
 
