@@ -67,7 +67,7 @@ python test.py
 
 ## Pre-trained Models and Logs
 
-Following the steps of Data preparation and Training, you can reproduce and  get   better results in our paper. We provide the pre-trained models and training logs  for RefCOCO, RefCOCO+, RefCOCOg. **Notably, we adjust some training hyperparameters like dropout rate, optimize the training codes and  select a better checkpoint of pre-trained  backbone, therefore making the performance better than the results of our paper. (Nearly 1~3\% improvements on each dataset.)**
+Following the steps of Data preparation and Training, you can reproduce and  get   better results in our paper. We provide the pre-trained models and training logs  for RefCOCO, RefCOCO+, RefCOCOg. **Notably, running this codes can achieve  better performance than the results of our paper. (Nearly 1~3\% improvements on each dataset.) This is because we have done many optimizations of this codes lately,  like carefully adjust some training hyperparameters, optimize the training codes and  select a better checkpoint of pre-trained  backbone, etc.**
 
 1) RefCOCO:  [Darknet (312M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/EpKrjcQw17JPmfKi2PteOuwBAmZZCFU7ucxxkX5jQIJjMg?e=0tJ59j), [vgg16(214M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/EjDokQYyLEZFnaZ8F_-k-5wBqjXX6v0r4jjvJTYmz9qVFQ?e=8dyYzv).
 <table>
