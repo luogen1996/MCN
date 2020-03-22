@@ -65,7 +65,7 @@ python data_process.py --data_root $DATA_PREP --output_dir $DATA_PREP --dataset 
 ```
 ## Pretrained Weights of Visual Backbone
 
-We provide the pretrained weights of vgg and darknet backbone, which are trained by yolov3 detection model. We remove all images appearing in the *val+test* splits of RefCOCO, RefCOCO+ and RefCOCOg. You should download the following weights into $DATA_PREP/weights.
+We provide the pretrained weights of vgg and darknet backbone, which are trained under [darknet-yolov3](https://github.com/AlexeyAB/darknet). We remove all images appearing in the *val+test* splits of RefCOCO, RefCOCO+ and RefCOCOg. You should download the following weights into $DATA_PREP/weights.
 
 | Pretrained Weights of Backbone                 |                        keras version                         |                       darknet version                        |
 | ---------------------------------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: |
