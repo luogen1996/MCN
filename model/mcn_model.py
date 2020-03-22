@@ -10,6 +10,7 @@ from model.bert import build_bert
 from model.utils import *
 from model.visual_backbone import *
 from model.garan import global_attentive_reason_unit
+
 def simple_fusion(F_v,f_q,dim=1024):
     """
     :param F_v: visual features (N,w,h,d)
@@ -104,9 +105,9 @@ def co_enegy_func(F_as,F_ac):
     Es=Conv2D(1,1)(F_as)
     Ec= Conv2D(1, 1)(F_ac)
     Es=Reshape([F_as_shape[1]*F_as_shape[2]])(Es)
-    Es=Lambda(K.softmax,arguments={'axis':-1})(Es)
+    Es=Lambda(softmax)(Es)
     Ec=Reshape([F_ac_shape[1]*F_ac_shape[2]])(Ec)
-    Ec = Lambda(K.softmax, arguments={'axis': -1})(Ec)
+    Ec = Lambda(softmax)(Ec)
 
     #caculate Tsc
     F_as=Reshape([F_as_shape[1]*F_as_shape[2],F_as_shape[-1]])(F_as)
