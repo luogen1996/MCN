@@ -63,11 +63,11 @@ python test.py
   <img src="https://github.com/luogen1996/MCN/blob/master/fig2.png" width="90%"/>
   </p>
   
-**Notably, it's fine that the losses do not decline when you use vgg backbone. It may be a display problem and doesn't influence the performance.**
+**Notably, running this codes can achieve  better performance than the results of our paper. (Nearly 1~3\% improvements on each dataset.) This is because we have done many optimizations of this codes lately,  like carefully adjust some training hyperparameters, optimize the training codes and  select a better checkpoint of pre-trained  backbone, etc. In addition, it's fine that the losses do not decline when you use vgg backbone. It may be a display problem and doesn't influence the performance.**
 
 ## Pre-trained Models and Logs
 
-Following the steps of Data preparation and Training, you can reproduce and  get   better results in our paper. We provide the pre-trained models and training logs  for RefCOCO, RefCOCO+, RefCOCOg. **Notably, running this codes can achieve  better performance than the results of our paper. (Nearly 1~3\% improvements on each dataset.) This is because we have done many optimizations of this codes lately,  like carefully adjust some training hyperparameters, optimize the training codes and  select a better checkpoint of pre-trained  backbone, etc.**
+Following the steps of Data preparation and Training, you can reproduce and  get   better results in our paper. We provide the pre-trained models and training logs  for RefCOCO, RefCOCO+, RefCOCOg and Referit. 
 
 1) RefCOCO:  [Darknet (312M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/EpKrjcQw17JPmfKi2PteOuwBAmZZCFU7ucxxkX5jQIJjMg?e=0tJ59j), [vgg16(214M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/EjDokQYyLEZFnaZ8F_-k-5wBqjXX6v0r4jjvJTYmz9qVFQ?e=8dyYzv).
 <table>
