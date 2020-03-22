@@ -76,12 +76,12 @@ Following the steps of Data preparation and Training, you can reproduce and  get
 
 | val               | test A            | test B            |
 | ----------------- | ----------------- | ----------------- |
-| 80.61\% / 63.12\% | 83.38\% / 65.05\% | 75.51\% / 60.99\% |
+| 80.61\%/63.12\% | 83.38\%/65.05\% | 75.51\%/60.99\% |
 </td><td>
 
 | val  | test A | test B |
 | ---- | ------ | ------ |
-| 79.68\% / 61.51\% | 81.49\% / 63.25\% | 75.30\% / 60.46\% |
+| 79.68\%/61.51\% | 81.49\%/63.25\% | 75.30\%/60.46\% |
 </td></tr> </table>
 
 2) RefCOCO+:  [Darknet (312M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/EqxOeU68jWtJhTy62dNhHikBVgM0lu7TrdvVzljN8t2h8Q?e=9DL8JD), [vgg16(214M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/Eh0dmi2tAgRKrv7ibRYPLsUBvtsBeBn-LmEJpJsAvvOiTg?e=fSRsSE).
@@ -90,13 +90,13 @@ Following the steps of Data preparation and Training, you can reproduce and  get
 <tr><td>
 
 | val               | test A            | test B            |
-| ------------------- | ------------------- | ------------------- |
-| 69.10\% / 53.00\% | 74.17\% / 57.00\% | 59.75\% / 46.96\% |
+| ----------------- | ----------------- | ----------------- |
+| 69.10\%/53.00\% | 74.17\%/57.00\% | 59.75\%/46.96\% |
 </td><td>
 
 | val  | test A | test B |
 | ---- | ------ | ------ |
-| 64.67\% / 49.04\% | 69.25\% / 51.94\% | 57.01\% / 44.31\% |
+| 64.67\%/49.04\% | 69.25\%/51.94\% | 57.01\%/44.31\% |
 </td></tr> </table>
 
 3) RefCOCOg:  [Darknet (312M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/ElyxCi4D0lRHucsKAS-IB3UBxduKgdOEo3eElJ5n0dIFDQ?e=fIRyg9), [vgg16(214M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/EnHNs4gd4HZDg9Zj51B6fG4Bv-5Z-8EqyHDC-rmcqlh6Ng?e=xd2EGY).
