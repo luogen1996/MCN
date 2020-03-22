@@ -9,7 +9,7 @@ import argparse
 parser = argparse.ArgumentParser(description='Data preparation')
 parser.add_argument('--data_root',  type=str) # contains refclef, refcoco, refcoco+, refcocog and images
 parser.add_argument('--output_dir',  type=str)
-parser.add_argument('--dataset', type=str, choices=['refcoco', 'refcoco+','refcocog'],default='refcoco')
+parser.add_argument('--dataset', type=str, choices=['refcoco', 'refcoco+','refcocog','refclef'],default='refcoco')
 parser.add_argument('--split',  type=str,default='umd')
 parser.add_argument('--generate_mask',  action='store_true')
 args = parser.parse_args()
@@ -25,7 +25,7 @@ print ('%s expressions for %s refs in %s images.' % (len(refer.Sents), len(ref_i
 print('\nAmong them:')
 if args.dataset == 'refclef':
     if args.split == 'unc':
-        splits = ['train', 'val', 'testA', 'testB', 'testC']
+        splits = ['train', 'val', 'testA','testB','testC']
     else:
         splits = ['train', 'val', 'test']
 elif args.dataset == 'refcoco':
@@ -33,7 +33,7 @@ elif args.dataset == 'refcoco':
 elif args.dataset == 'refcoco+':
     splits = ['train', 'val',  'testA', 'testB']
 elif args.dataset == 'refcocog':
-    splits = ['train', 'val','test'] 
+    splits = ['train', 'val', 'test']  # we don't have test split for refcocog right now.
 
 
 # split data as a type in splits list
@@ -134,6 +134,8 @@ def prepare_dataset(dataset,splits,output_dir,generate_mask=False):
             image_urls=refer.loadImgs(image_ids=refs['image_id'])[0]
             cat = cat_process(refs['category_id'])
             image_urls=image_urls['file_name']
+            if dataset=='refclef' and  image_urls in ['19579.jpg', '17975.jpg', '19575.jpg']:
+                continue
             box_info=bbox_process(bboxs,cat,i) #add segement id
             f.write(image_urls)
             f.write(box_info)
