@@ -90,7 +90,7 @@ Following the steps of Data preparation and Training, you can reproduce and  get
 <tr><td>
 
 | val               | test A            | test B            |
-| ----------------- | ----------------- | ----------------- |
+| ------------------- | ------------------- | ------------------- |
 | 69.10\% / 53.00\% | 74.17\% / 57.00\% | 59.75\% / 46.96\% |
 </td><td>
 
