@@ -65,8 +65,56 @@ python test.py
   
 **Notably, it's fine that the losses do not decline when you use vgg backbone. It may be a display problem and doesn't influence the performance.**
 
-## Pre-trained Models
-Coming soon!
+## Pre-trained Models and Logs
+
+Following the steps of Data preparation and Training, you can reproduce and  get   better results in our paper. We provide the pre-trained models and training logs  for RefCOCO, RefCOCO+, RefCOCOg. **Notably, we adjust some training hyperparameters like dropout rate, optimize the training codes and  select a better checkpoint of pre-trained  backbone, therefore making the performance better than the results of our paper. (Nearly 1~3\% improvements on each dataset.)**
+
+1) RefCOCO:  [Darknet (312M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/EpKrjcQw17JPmfKi2PteOuwBAmZZCFU7ucxxkX5jQIJjMg?e=0tJ59j), [vgg16(214M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/EjDokQYyLEZFnaZ8F_-k-5wBqjXX6v0r4jjvJTYmz9qVFQ?e=8dyYzv).
+<table>
+<tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
+<tr><td>
+
+| val               | test A            | test B            |
+| ----------------- | ----------------- | ----------------- |
+| 80.61\% / 63.12\% | 83.38\% / 65.05\% | 75.51\% / 60.99\% |
+</td><td>
+
+| val  | test A | test B |
+| ---- | ------ | ------ |
+| 79.68\% / 61.51\% | 81.49\% / 63.25\% | 75.30\% / 60.46\% |
+</td></tr> </table>
+
+2) RefCOCO+:  [Darknet (312M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/EqxOeU68jWtJhTy62dNhHikBVgM0lu7TrdvVzljN8t2h8Q?e=9DL8JD), [vgg16(214M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/Eh0dmi2tAgRKrv7ibRYPLsUBvtsBeBn-LmEJpJsAvvOiTg?e=fSRsSE).
+<table>
+<tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
+<tr><td>
+
+| val               | test A            | test B            |
+| ----------------- | ----------------- | ----------------- |
+| 69.10\% / 53.00\% | 74.17\% / 57.00\% | 59.75\% / 46.96\% |
+</td><td>
+
+| val  | test A | test B |
+| ---- | ------ | ------ |
+| 64.67\% / 49.04\% | 69.25\% / 51.94\% | 57.01\% / 44.31\% |
+</td></tr> </table>
+
+3) RefCOCOg:  [Darknet (312M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/ElyxCi4D0lRHucsKAS-IB3UBxduKgdOEo3eElJ5n0dIFDQ?e=fIRyg9), [vgg16(214M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/EnHNs4gd4HZDg9Zj51B6fG4Bv-5Z-8EqyHDC-rmcqlh6Ng?e=xd2EGY).
+<table>
+<tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
+<tr><td>
+
+| val               | test              |
+| ----------------- | ----------------- |
+| 68.95\% / 50.65\% | 67.88\% / 50.62\% |
+</td><td>
+
+| val  | test |
+| ---- | ---- |
+| 63.50\% / 47.81\% | 63.32\% / 47.94\% |
+</td></tr> </table>
+
+4) Referit:  coming soon!
 
 ## Acknowledgement
 
