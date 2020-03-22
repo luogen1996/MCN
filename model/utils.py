@@ -23,3 +23,5 @@ def normalize(x):
     return K.clip(x,1e-6,1.-1e-6)
 def l2_normalize(x):
     return  tf.nn.l2_normalize(x, axis=-1,epsilon=1e-6)
+def softmax(x):
+    return K.softmax(x-tf.reduce_max(x),-1)
