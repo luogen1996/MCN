@@ -63,7 +63,7 @@ python test.py
   <img src="https://github.com/luogen1996/MCN/blob/master/fig2.png" width="90%"/>
   </p>
   
-**Notably, running this codes can achieve  better performance than the results of our paper. (Nearly 1~3\% improvements on each dataset.) This is because we have done many optimizations  lately,  such as carefully adjusting some training hyperparameters, optimizing the training codes and  selecting a better checkpoint of pre-trained  backbone, etc. In addition, it's fine that the losses do not decline when you use vgg16 as backbone. It may be a display problem and doesn't influence the performance.**
+**Notably, running this codes can achieve  better performance than the results of our paper. (Nearly 1~4\% improvements on each dataset.) This is because we have done many optimizations  lately,  such as carefully adjusting some training hyperparameters, optimizing the training codes and  selecting a better checkpoint of pre-trained  backbone, etc. In addition, it's fine that the losses do not decline when you use vgg16 as backbone. It may be a display problem and doesn't influence the performance.**
 
 ## Pre-trained Models and Logs
 
