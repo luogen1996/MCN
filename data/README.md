@@ -69,13 +69,13 @@ We provide the pretrained weights of vgg and darknet backbone, which are trained
 
 | Pretrained Weights of Backbone                 |                        keras version                         |                       darknet version                        |
 | ---------------------------------------------- | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| DarkNet53-yolov3                               | [OneDrive](https://jia666-my.sharepoint.com/:u:/g/personal/luogen_xkx_me/ET3x5aggQShCrcWbyTIXucwBC6IQtL0XHJ39nBDGPK3VZg?e=MmesdA) | [OneDrive](https://jia666-my.sharepoint.com/:u:/g/personal/luogen_xkx_me/EXvoXezZFNRCvJ80d0j0R_sBFcdosfL6fiyPLKBxRk88hQ?e=euMwjT) |
-| Vgg16-yolov3                                   | [OneDrive](https://1drv.ms/u/s!AmrFUyZ_lDVGgkMPh_zKPyocbMSG?e=ehYFNJ) | [OneDrive](https://1drv.ms/u/s!AmrFUyZ_lDVGgkTyADdOCMXJs8lH?e=n103v6) |
+| DarkNet53-yolov3                               | [OneDrive](https://jia666-my.sharepoint.com/:u:/g/personal/luogen_xkx_me/ET3x5aggQShCrcWbyTIXucwBC6IQtL0XHJ39nBDGPK3VZg?e=MmesdA), [Baidu Cloud](https://pan.baidu.com/s/1LpC1W8jR1XhvqvGeCMyNYg)(password:xvue) | [OneDrive](https://jia666-my.sharepoint.com/:u:/g/personal/luogen_xkx_me/EXvoXezZFNRCvJ80d0j0R_sBFcdosfL6fiyPLKBxRk88hQ?e=euMwjT), [Baidu Cloud](https://pan.baidu.com/s/1nUJqqgTFY5lBmTkpNVJRiA)(password:az2j) |
+| Vgg16-yolov3                                   | [OneDrive](https://1drv.ms/u/s!AmrFUyZ_lDVGgkMPh_zKPyocbMSG?e=ehYFNJ), [Baidu Cloud](https://pan.baidu.com/s/118wzf1ncC5W31jgxZML6yg)(password:wdb8) | [OneDrive](https://1drv.ms/u/s!AmrFUyZ_lDVGgkTyADdOCMXJs8lH?e=n103v6), [Baidu Cloud](https://pan.baidu.com/s/13WjFBO3ZVOmZOR8DDfGXiw)(password:4tml) |
 
 The weights of darknet pretrained on the whole *train* set of MS-COCO are also released as following, which will boost the  performance of REC around 2~3% in practice.   Notbly, we release it for training on other datasets like referit, but do not advise to use it for RefCOCO, RefCOCO+ and RefCOCOg.  **(it is incorrect to use the COCO pre-trained backbone on RefCOCO, RefCOCO+, and RefCOCOg datasets)** .  
 
 | Pretrained Weights of Backbone    |                        keras version                         |                       darknet version                       |
 | --------------------------------- | :----------------------------------------------------------: | :---------------------------------------------------------: |
-| DarkNet-yolov3 (COCO pre-trained) | [OneDrive](https://1drv.ms/u/s!AmrFUyZ_lDVGgkfaOxziFJr01WNy?e=kwl3h1) | [OneDrive](https://pjreddie.com/media/files/yolov3.weights) |
+| DarkNet-yolov3 (COCO pre-trained) | [OneDrive](https://1drv.ms/u/s!AmrFUyZ_lDVGgkfaOxziFJr01WNy?e=kwl3h1), [Baidu Cloud](链接：https://pan.baidu.com/s/1rt2ml0oOLSAbHahVksDg1w)(password:l9q6) | [Link](https://pjreddie.com/media/files/yolov3.weights) |
 
 Tips: In our  practice, different checkpoints  partly  varies the performence of model. if you require other checkpoints, please contact [us](luogen@stu.xmu.edu.cn).
