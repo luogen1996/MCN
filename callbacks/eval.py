@@ -22,6 +22,16 @@ class Evaluate(keras.callbacks.Callback):
         verbose=1
     ):
         """ Evaluate a given dataset using a given model at the end of every epoch during training.
+
+        # Arguments
+            generator        : The generator that represents the dataset to evaluate.
+            iou_threshold    : The threshold used to consider when a detection is positive or negative.
+            score_threshold  : The score confidence threshold to use for detections.
+            max_detections   : The maximum number of detections to use per image.
+            save_path        : The path to save images with visualized detections to.
+            tensorboard      : Instance of keras.callbacks.TensorBoard used to log the mAP value.
+            weighted_average : Compute the mAP using the weighted average of precisions among classes.
+            verbose          : Set the verbosity level, by default this is set to 1.
         """
         self.val_data       = data
         self.tensorboard     = tensorboard
@@ -192,7 +202,7 @@ class Evaluate(keras.callbacks.Callback):
 
                 #visualization
                 if is_save_images and (files_id[i] in self.eval_save_images_id):
-                    top, left, bottom, right = pred_box
+                    left, top, right, bottom = pred_box
                     # Draw image
                     gt_left, gt_top, gt_right, gt_bottom = (gt_boxes[i]).astype('int32')
                     image = np.array(images[i] * 255.).astype(np.uint8)
@@ -223,6 +233,7 @@ class Evaluate(keras.callbacks.Callback):
                                 (20, 20),
                                 cv2.FONT_HERSHEY_SIMPLEX,
                                 .9, self.colors[2], 2)
+                    cv2.imwrite('./images/'+str(files_id[i])+'.jpg',image)
                     log_images(self.tensorboard, tag + '/' + str(files_id[i]), [image], 0)
                     log_images(self.tensorboard, tag + '/' + str(files_id[i]) + '_seg', [seg_image], 0)
 
@@ -270,11 +281,11 @@ class Evaluate(keras.callbacks.Callback):
         :param shape:
         :return:
         '''
-        left, top, right, bottom = box
+        top, left, bottom, right = box
         new_w, new_h = shape
         top = max(0, np.floor(top + 0.5).astype('int32'))
         left = max(0, np.floor(left + 0.5).astype('int32'))
         bottom = min(new_h, np.floor(bottom + 0.5).astype('int32'))
         right = min(new_w, np.floor(right + 0.5).astype('int32'))
-        box=np.array([top, left, bottom, right]).astype('int32')
+        box=np.array([left, top, right, bottom]).astype('int32')
         return box
