@@ -62,6 +62,7 @@ python test.py
   <p align="center">
   <img src="https://github.com/luogen1996/MCN/blob/master/fig2.png" width="90%"/>
   </p>
+  
 **Notably, it's fine that the losses do not decline when you use vgg backbone. It may be a display problem and doesn't influence the performance.**
 
 ## Pre-trained Models
