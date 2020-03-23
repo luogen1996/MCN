@@ -114,7 +114,22 @@ Following the steps of Data preparation and Training, you can reproduce and  get
 | 63.50\% / 47.81\% | 63.32\% / 47.94\% |
 </td></tr> </table>
 
-4) Referit:  coming soon!
+4) Referit:  [Darknet (312M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/Epwvz5exhO9Di7BWVdccnewBiGYeY79NaZ7unxUuT8jZ2w?e=gxKGfc), [vgg16(214M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/EgaZ64Q9mKtIh1znnk0rUbkBLyZkx4jQf60V89ViwYC7nA?e=xMJ3Di).
+<table>
+<tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
+<tr><td>
+
+| val               | test              |
+| ----------------- | ----------------- |
+| 69.29\% / 57.00\% | 67.65\% / 55.42\% |
+
+</td><td>
+
+| val               | test              |
+| ----------------- | ----------------- |
+| 68.28\% / 56.19\% | 65.49\% / 53.68\% |
+
+</td></tr> </table>
 
 ## Acknowledgement
 
