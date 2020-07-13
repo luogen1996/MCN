@@ -69,7 +69,7 @@ python test.py
 
 Following the steps of Data preparation and Training, you can reproduce and  get   better results in our paper. We provide the pre-trained models and training logs  for RefCOCO, RefCOCO+, RefCOCOg and Referit. 
 
-1) RefCOCO:  [Darknet (312M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/EpKrjcQw17JPmfKi2PteOuwBAmZZCFU7ucxxkX5jQIJjMg?e=0tJ59j), [vgg16(214M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/EjDokQYyLEZFnaZ8F_-k-5wBqjXX6v0r4jjvJTYmz9qVFQ?e=8dyYzv).
+1) RefCOCO:  [Darknet (312M)](https://1drv.ms/u/s!AmrFUyZ_lDVGiRL_WITB7kfqX0St?e=JlWTBX), [vgg16(214M)](https://1drv.ms/u/s!AmrFUyZ_lDVGiScJ7zFZNZOXE6VI?e=b1iCYa).
 <table>
 <tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
 <tr><td>
@@ -84,7 +84,7 @@ Following the steps of Data preparation and Training, you can reproduce and  get
 | 79.68\%/61.51\% | 81.49\%/63.25\% | 75.30\%/60.46\% |
 </td></tr> </table>
 
-2) RefCOCO+:  [Darknet (312M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/EqxOeU68jWtJhTy62dNhHikBVgM0lu7TrdvVzljN8t2h8Q?e=9DL8JD), [vgg16(214M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/Eh0dmi2tAgRKrv7ibRYPLsUBvtsBeBn-LmEJpJsAvvOiTg?e=fSRsSE).
+2) RefCOCO+:  [Darknet (312M)](https://1drv.ms/u/s!AmrFUyZ_lDVGiROAVl3RuIllJLAC?e=qPMity), [vgg16(214M)](https://1drv.ms/u/s!AmrFUyZ_lDVGiShEnn5tmeI0bM_q?e=x7BOcs).
 <table>
 <tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
 <tr><td>
@@ -99,7 +99,7 @@ Following the steps of Data preparation and Training, you can reproduce and  get
 | 64.67\%/49.04\% | 69.25\%/51.94\% | 57.01\%/44.31\% |
 </td></tr> </table>
 
-3) RefCOCOg:  [Darknet (312M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/ElyxCi4D0lRHucsKAS-IB3UBxduKgdOEo3eElJ5n0dIFDQ?e=fIRyg9), [vgg16(214M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/EnHNs4gd4HZDg9Zj51B6fG4Bv-5Z-8EqyHDC-rmcqlh6Ng?e=xd2EGY).
+3) RefCOCOg:  [Darknet (312M)](https://1drv.ms/u/s!AmrFUyZ_lDVGiRRafGe8qzDDuLci?e=qUBLBT), [vgg16(214M)](https://1drv.ms/u/s!AmrFUyZ_lDVGiSkOuTZ0g1LIRBVl?e=YitGvV).
 <table>
 <tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
 <tr><td>
@@ -114,7 +114,7 @@ Following the steps of Data preparation and Training, you can reproduce and  get
 | 63.50\% / 47.81\% | 63.32\% / 47.94\% |
 </td></tr> </table>
 
-4) Referit:  [Darknet (312M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/Epwvz5exhO9Di7BWVdccnewBiGYeY79NaZ7unxUuT8jZ2w?e=gxKGfc), [vgg16(214M)](https://jia666-my.sharepoint.com/:f:/g/personal/luogen_xkx_me/EgaZ64Q9mKtIh1znnk0rUbkBLyZkx4jQf60V89ViwYC7nA?e=xMJ3Di).
+4) Referit:  [Darknet (312M)](https://1drv.ms/u/s!AmrFUyZ_lDVGiRUQCWpBx1D5cm8_?e=MDjO2I), [vgg16(214M)](https://1drv.ms/u/s!AmrFUyZ_lDVGiSouSmtCBg5zhlB_?e=1ONzTK).
 <table>
 <tr><th> Detection/Segmentation (Darknet) </th><th> Detection/Segmentation (vgg16)</th></tr>
 <tr><td>
