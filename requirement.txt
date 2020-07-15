@@ -1,6 +1,6 @@
 pycocotools==2.0.0
 matplotlib==3.0.2
-numpy
+numpy==1.15.4
 scikit-image==0.14.2
 opencv==3.4.2
 keras_bert
