@@ -20,13 +20,14 @@ This repository is keras implementation of MCN.  The principle of MCN is a multi
 
 ## Citation
 
-@InProceedings{Luo_2020_CVPR,
-author = {Luo, Gen and Zhou, Yiyi and Sun, Xiaoshuai and Cao, Liujuan and Wu, Chenglin and Deng, Cheng and Ji, Rongrong},
-title = {Multi-Task Collaborative Network for Joint Referring Expression Comprehension and Segmentation},
-booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-month = {June},
-year = {2020}
-}
+    @InProceedings{Luo_2020_CVPR,
+    author = {Luo, Gen and Zhou, Yiyi and Sun, Xiaoshuai and Cao, Liujuan and Wu, Chenglin and Deng, Cheng and Ji, Rongrong},
+    title = {Multi-Task Collaborative Network for Joint Referring Expression Comprehension and Segmentation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month = {June},
+    year = {2020}
+    }
+
 ## Prerequisites
 
 - Python 3.6
