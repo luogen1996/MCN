@@ -11,7 +11,7 @@ by Gen Luo, Yiyi Zhou, Xiaoshuai Sun, Liujuan Cao, Chenglin Wu, Cheng Deng and R
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020, Oral
 
 ## Updates
-- (2022/4/20) Implement MCN (pytorch) for [SimREC project](https://github.com/luogen1996/SimREC).
+- (2022/4/20) Implement MCN (pytorch) in [SimREC project](https://github.com/luogen1996/SimREC).
 
 ## Introduction
 
