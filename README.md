@@ -10,6 +10,9 @@ by Gen Luo, Yiyi Zhou, Xiaoshuai Sun, Liujuan Cao, Chenglin Wu, Cheng Deng and R
 
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020, Oral
 
+## Updates
+- (2022/4/20) Implement MCN (pytorch) for [SimREC project](https://github.com/luogen1996/SimREC).
+
 ## Introduction
 
 This repository is keras implementation of MCN.  The principle of MCN is a multimodal and multitask collaborative learning framework. In MCN, RES can help REC to achieve better language-vision alignment, while REC can help RES to better locate the referent. In addition, we address a key challenge in this multi-task setup, i.e., the prediction conflict, with two innovative designs namely, Consistency Energy Maximization (CEM) and Adaptive Soft Non-Located Suppression (ASNLS).  The network structure is illustrated as following:
